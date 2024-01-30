@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe95cfdf25.js" crossorigin="anonymous"></script>
+</head>
+<body class="m-0 p-0">
+    <h1 class=" bg-blue-950 text-white text-center text-xl lg:text-3xl md:text-2xl"><p class="p-4">Rock Paper Scissors</p></h1>
+    <div class="choices container mx-auto my-10 flex justify-around">
+        <img id="rock" class="choice rounded-full w-20 h-20 md:w-32 md:h-32  lg:w-40 lg:h-40 object-cover hover:cursor-pointer hover:border-4 border-black " src="./images/rock.png">
+        <img id="paper" class="choice rounded-full w-20 h-20 md:w-32 md:h-32  lg:w-40 lg:h-40 object-cover hover:cursor-pointer hover:border-4 border-black " src="./images/paper.png">
+        <img id="scissors" class="choice rounded-full w-20 h-20 md:w-32 md:h-32  lg:w-40 lg:h-40 object-cover hover:cursor-pointer hover:border-4 border-black " src="./images/scissors.png">  
+    </div>
+    <div class="score container mx-auto flex justify-center gap-0 lg:gap-6 md:gap-3">
+        <div class="user">
+            <p id="user-score" class="w-24 md:w-52 lg:w-60 text-center text-lg md:text-xl lg:text-2xl">0</p>
+            <p class="w-24 md:w-52 lg:w-60 text-center text-lg md:text-xl lg:text-2xl" >you</p>
+        </div>
+        <!-- <div> 
+            <p id="life" class="w-24 md:w-52 lg:w-60 text-center text-lg md:text-xl lg:text-2xl mt-4"> <i class="fa-solid fa-heart text-red-600"></i>-<span>10</span></p>
+        </div> -->
+        <div class="computer">
+            <p id="computer-score" class="w-24 md:w-52 lg:w-60 text-center text-lg md:text-xl lg:text-2xl">0</p>
+            <p class="w-24 md:w-52 lg:w-60 text-center text-lg md:text-xl lg:text-2xl">computer</p>
+        </div>
+    </div>
+    <div class="massage flex justify-center my-14 ">
+      <p id="mess" class="  text-center p-5 inline text-lg  md:text-xl lg:text-3xl   border-black rounded-xl bg-blue-950 text-white" >play your Move</p>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
